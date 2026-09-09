@@ -1,2 +1,2 @@
 # Website
-IT engineering Freelance Portfolio 2026
+Thomas Simon - IT Engineer - Freelance | Portfolio - 2026
