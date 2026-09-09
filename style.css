@@ -48,25 +48,30 @@ h1 {
 }
 
 a {
-  color: #A6F527;
+  color: #161b12;
   text-decoration: none;
+  background-image: linear-gradient(-90deg, #c8ff6d 0%, #A6F527 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 0.05em 0.2em;
+  border-radius: 2px;
 }
 
 a:link {
-  color: #A6F527;
+  color: #161b12;
 }
 
 a:visited {
-  color: #8fe11d;
+  color: #161b12;
 }
 
 a:hover {
   color: #0f1a0a;
-  background-image: linear-gradient(-90deg, #c8ff6d 0%, #A6F527 100%);
+  background-image: linear-gradient(-90deg, #d9ff85 0%, #B8FF3A 100%);
 }
 
 a:active {
-  color: #A6F527;
+  color: #0f1a0a;
 }
 
 .highlight {
@@ -77,7 +82,7 @@ a:active {
 }
 
 .highlight-2 {
-  color: #fff;
+  color: #161b12;
   background-image: linear-gradient(-90deg, #c8ff6d 0%, #A6F527 100%);
 }
 
@@ -109,6 +114,10 @@ a:active {
   text-decoration: none !important;
   color: #202020;
   font-size: 21px !important;
+  background: none;
+  background-image: none;
+  border-radius: 0;
+  padding: 2em;
 }
 
 #navbar a:hover {
@@ -350,14 +359,14 @@ footer a:hover {
 footer h1 {
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 400 !important;
-  color: #fafafa;
+  color: #202020;
 }
 
 footer p {
   font-size: 20px;
   font-family: 'Libre Franklin', sans-serif !important;
   margin-bottom: 5%;
-  color: #fafafa;
+  color: #202020;
 }
 
 #contacts {
