@@ -1,0 +1,30 @@
+# =============================================================================
+# PRIVATE ARCHITECTURAL & AI CONTEXT SPECIFICATIONS (DO NOT SYNC TO GITHUB)
+# =============================================================================
+Human-Context Architecture.md
+Human-Context\ Architecture.md
+HUMAN_CONTEXT_ARCHITECTURE.md
+*Human*Context*Architecture*.md
+01_Human_Context_Architecture_Obsidian.md
+02_LLM_Calibration_System_Prompt.md
+03_Context_Engineering_Blueprint_Study_Guide.md
+
+# =============================================================================
+# LOCAL AI / AGENT & ENVIRONMENT SECRETS
+# =============================================================================
+.env
+.env.*
+*.local
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# =============================================================================
+# OS & EDITOR ARTIFACTS
+# =============================================================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
