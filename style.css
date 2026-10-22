@@ -236,10 +236,11 @@ a.inline-link {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
+  transition: color var(--transition-fast);
 }
 
 a.inline-link:hover {
-  color: #c4ff57;
+  color: var(--accent-cyan);
 }
 
 code, kbd, samp, pre {
