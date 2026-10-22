@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thomas Simon · Arquitecto de Sistemas · Ingeniero NOC · Ingeniero de Contexto IA</title>
+  <meta name="description" content="Plataforma profesional de Thomas Mathieu Simon. Consultor Senior de TI, Ingeniero NOC y Arquitecto de Sistemas en la intersección de infraestructura cloud resiliente, observabilidad de redes centralizada e ingeniería de contexto de IA alineada al ser humano.">
+  <meta name="author" content="Thomas Mathieu Simon">
+  <meta name="keywords" content="Thomas Simon, Arquitecto de Sistemas, Ingeniero NOC, Ingeniero de Contexto IA, Infraestructura Cloud, VMware, Azure, MCP, Model Context Protocol, Terraform, Ansible, Linux, Observabilidad, La Paz Bolivia">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Thomas Simon · Arquitecto de Sistemas &amp; Ingeniero NOC">
+  <meta property="og:description" content="Infraestructura construida sobre primeros principios. Sistemas diseñados para la soberanía humana.">
+  <meta property="og:url" content="https://tsimon.me/es.html">
+  <meta property="og:locale" content="es_BO">
+
+  <!-- Multilingual Alternates -->
+  <link rel="alternate" hreflang="en" href="index.html">
+  <link rel="alternate" hreflang="fr" href="fr.html">
+  <link rel="alternate" hreflang="es" href="es.html">
+  <link rel="alternate" hreflang="x-default" href="index.html">
+
+  <!-- Favicons & App Manifest -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#090b0e">
+
+  <!-- Anti-flicker Theme Ingestion -->
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('tsimon-theme');
+        var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+        if (saved === 'light' || (!saved && prefersLight)) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       SECTION [00]: TOP UTILITY BAR & TELEMETRY
+       ========================================================================= -->
+  <header role="banner" class="top-bar">
+    <div class="container">
+      <div class="top-bar-inner">
+        <div class="status-telemetry">
+          <div class="status-pill" title="Disponibilidad operativa">
+            <span class="status-indicator" aria-hidden="true"></span>
+            <span>ESTADO: DISPONIBLE PARA CONTRATOS SELECTOS</span>
+          </div>
+          <span class="telemetry-meta" aria-hidden="true">|</span>
+          <div class="telemetry-meta">
+            <span>LA PAZ, BO // </span><span id="utc-clock">UTC-4</span>
+          </div>
+        </div>
+
+        <nav class="top-nav" aria-label="Navegación principal">
+          <ul class="top-nav-list">
+            <li><a href="#matrix" class="top-nav-link">[02 Matriz]</a></li>
+            <li><a href="#projects" class="top-nav-link">[03 Proyectos]</a></li>
+            <li><a href="#synthesis" class="top-nav-link">[04 Síntesis]</a></li>
+            <li><a href="#methodology" class="top-nav-link">[05 Método]</a></li>
+            <li><a href="#contact" class="top-nav-link">[06 Contacto]</a></li>
+          </ul>
+
+          <div class="lang-indicator" title="Cambiar idioma">
+            <a href="index.html" aria-label="English">EN</a> /
+            <a href="fr.html" aria-label="Français">FR</a> /
+            <a href="es.html" class="active" aria-label="Español">ES</a>
+          </div>
+
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar a modo claro" title="Cambiar tema">
+            <!-- Icono Sol (modo oscuro) -->
+            <svg class="theme-icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <!-- Icono Luna (modo claro) -->
+            <svg class="theme-icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- =======================================================================
+         SECTION [01]: HERO & POSITIONING HEADER
+         ======================================================================= -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <span class="hero-eyebrow">
+              THOMAS SIMON // ARQUITECTO DE SISTEMAS · INGENIERO NOC · INGENIERO DE CONTEXTO IA
+            </span>
+            <h1 id="hero-heading" class="hero-title">
+              Infraestructura construida sobre primeros principios.<br>
+              Sistemas diseñados para la soberanía humana.
+            </h1>
+            <p class="hero-lead">
+              Diseño, estabilizo y documento infraestructura cloud, redes virtualizadas y flujos de trabajo de IA alineados al ser humano. Combinando dos décadas de rigor multidisciplinario —desde telecomunicaciones y operaciones NOC/Nivel 2 hasta reportaje fotográfico documental— cierro la brecha entre la topología compleja de las máquinas y los operadores que dependen de ellas.
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">
+                <span>[ Iniciar consulta técnica ]</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#projects" class="btn btn-secondary">
+                <span>[ Inspeccionar arquitectura y proyectos ]</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Operator Specification Telemetry Card -->
+          <aside class="operator-card" aria-label="Especificación del Operador">
+            <div class="operator-card-header">
+              <div class="terminal-dots" aria-hidden="true">
+                <span class="terminal-dot active"></span>
+                <span class="terminal-dot"></span>
+                <span class="terminal-dot"></span>
+              </div>
+              <span>OPERATOR_SPEC.yaml</span>
+              <span class="status-pill"><span class="status-indicator"></span>ACTIVO</span>
+            </div>
+            <pre class="operator-code-block"><code><span class="key">ESPEC_OPERADOR</span>:
+  <span class="key">identidad</span>: <span class="string">"Thomas Mathieu Simon"</span>
+  <span class="key">titulacion</span>: <span class="string">"AS Telecomunicaciones y Redes (CNAM Francia)"</span>
+  <span class="key">ubicacion_actual</span>: <span class="string">"La Paz, Bolivia [UTC-4]"</span>
+  <span class="key">idiomas</span>: [<span class="string">"Francés (Nativo)"</span>, <span class="string">"Inglés (Fluido)"</span>, <span class="string">"Español (Profesional)"</span>]
+  <span class="key">postura_operativa</span>: <span class="string">"Remoto sincrónico (Solapamiento EE. UU. / LATAM / Europa)"</span>
+  <span class="key">capa_maquina</span>:
+    - <span class="string">"Infraestructura Cloud e Híbrida (Azure / M365)"</span>
+    - <span class="string">"Virtualización empresarial (VMware ESXi / Hyper-V)"</span>
+    - <span class="string">"IaC determinista (Terraform, Ansible, Linux)"</span>
+    - <span class="string">"Observabilidad NOC de alta fidelidad y telemetría SNMP"</span>
+  <span class="key">capa_operador</span>:
+    - <span class="string">"Ingeniería de contexto y protocolos de alineación de IA"</span>
+    - <span class="string">"Cómputo en el Edge local (Raspberry Pi 5, Ollama, Cloudflare)"</span>
+    - <span class="string">"Integración de Model Context Protocol (MCP)"</span>
+    - <span class="string">"Laboratorios pedagógicos (<a href=\"https://minkalab.net\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"code-link\" title=\"Visitar Minka Lab\">Minka Lab</a>)"</span>
+  <span class="key">estado</span>: <span class="highlight">"EN_LINEA // DISPONIBLE_PARA_CONTRATOS_SELECTOS"</span></code></pre>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION [02]: CORE COMPETENCIES MATRIX
+         ======================================================================= -->
+    <section id="matrix" class="section-wrapper" aria-labelledby="matrix-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">[02 // COMPETENCIAS FUNDAMENTALES]</span>
+          <h2 id="matrix-heading">Arquitectura técnica y matriz operativa</h2>
+          <p class="section-subtitle">
+            Competencias de ingeniería forjadas a lo largo de más de 13 años de operaciones en producción, más de 100 entornos de clientes y una total ausencia de ambigüedad.
+          </p>
+        </header>
+
+        <div class="matrix-grid">
+          <!-- Pillar 1 -->
+          <article class="matrix-card">
+            <span class="matrix-card-num">01 / INFRAESTRUCTURA</span>
+            <h3 class="matrix-card-title">Infraestructura Cloud e Híbrida</h3>
+            <p class="matrix-card-desc">
+              Diseño, aprovisionamiento y migración de entornos tolerantes a fallos. Dominio profundo de Microsoft Azure, ecosistemas empresariales de M365, clústeres de virtualización y automatización determinista.
+            </p>
+            <ul class="tech-tags" aria-label="Tecnologías Cloud e Infraestructura">
+              <li class="tech-tag">Azure</li>
+              <li class="tech-tag">VMware ESXi</li>
+              <li class="tech-tag">Hyper-V</li>
+              <li class="tech-tag">Terraform</li>
+              <li class="tech-tag">Ansible</li>
+              <li class="tech-tag">Servidores Linux / Windows</li>
+              <li class="tech-tag">BCDR</li>
+            </ul>
+          </article>
+
+          <!-- Pillar 2 -->
+          <article class="matrix-card">
+            <span class="matrix-card-num">02 / OBSERVABILIDAD</span>
+            <h3 class="matrix-card-title">Operaciones NOC y Triage de Incidentes</h3>
+            <p class="matrix-card-desc">
+              Gestión de escalaciones de incidentes N2/N3, pipelines de monitoreo centralizado y diagnóstico rápido de causa raíz. Gestión de más de 3.500 endpoints con calibración de umbrales y redacción de runbooks.
+            </p>
+            <ul class="tech-tags" aria-label="Tecnologías de Observabilidad y NOC">
+              <li class="tech-tag">NOC N2/N3</li>
+              <li class="tech-tag">SNMP / Syslog</li>
+              <li class="tech-tag">Centralización RMM</li>
+              <li class="tech-tag">Causa Raíz</li>
+              <li class="tech-tag">Reducción MTTR</li>
+              <li class="tech-tag">Gobernanza SLA</li>
+            </ul>
+          </article>
+
+          <!-- Pillar 3 -->
+          <article class="matrix-card">
+            <span class="matrix-card-num">03 / SISTEMAS IA</span>
+            <h3 class="matrix-card-title">Ingeniería de Contexto y Sistemas IA</h3>
+            <p class="matrix-card-desc">
+              Transformación de LLMs genéricos en amplificadores cognitivos estructurados. Integraciones de Model Context Protocol (MCP), orquestación de agentes locales, rúbricas de evaluación RLHF y salvaguardas epistémicas.
+            </p>
+            <ul class="tech-tags" aria-label="Tecnologías de Sistemas IA">
+              <li class="tech-tag">Arquitectura MCP</li>
+              <li class="tech-tag">LLMs locales (Ollama)</li>
+              <li class="tech-tag">Edge AI (RPi5)</li>
+              <li class="tech-tag">Grafos Cognitivos</li>
+              <li class="tech-tag">Rúbricas RLHF</li>
+              <li class="tech-tag">Python</li>
+            </ul>
+          </article>
+
+          <!-- Pillar 4 -->
+          <article class="matrix-card">
+            <span class="matrix-card-num">04 / SOBERANÍA</span>
+            <h3 class="matrix-card-title">Seguridad, Higiene Digital y Soberanía</h3>
+            <p class="matrix-card-desc">
+              Hardening pragmático de ciberseguridad, segmentación de acceso Zero-Trust y protocolos de cifrado. Protección de la autonomía del operador y eliminación de puntos únicos de fallo.
+            </p>
+            <ul class="tech-tags" aria-label="Tecnologías de Seguridad y Soberanía">
+              <li class="tech-tag">Acceso Zero-Trust</li>
+              <li class="tech-tag">Cifrado GPG / PGP</li>
+              <li class="tech-tag">Hardening Endpoints</li>
+              <li class="tech-tag">Higiene Digital</li>
+              <li class="tech-tag">Túneles Cloudflare</li>
+              <li class="tech-tag">Backups Aislados</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION [03]: FEATURED PROJECTS & LAB INITIATIVES
+         ======================================================================= -->
+    <section id="projects" class="section-wrapper" aria-labelledby="projects-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">[03 // ARQUITECTURA APLICADA E INICIATIVAS]</span>
+          <h2 id="projects-heading">Sistemas emblemáticos y laboratorios pedagógicos</h2>
+          <p class="section-subtitle">
+            Estudios de caso que abarcan la estabilización de infraestructura MSP empresarial, cómputo local de IA en el Edge e iniciativas cívicas de soberanía digital en América Latina.
+          </p>
+        </header>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <span class="project-category">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              Pedagogía Cívica y Empoderamiento
+            </span>
+            <h3 class="project-title">
+              <a href="https://minkalab.net" target="_blank" rel="noopener noreferrer" title="Visitar Minka Lab (Enlace externo)">
+                <span>Minka Lab</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </h3>
+            <div class="project-meta-block">
+              <span class="meta-label">Arquitectura del problema</span>
+              <p class="meta-content">
+                Los estudiantes en regiones en desarrollo se enfrentan a modelos extractivos de plataformas comerciales y carecen de formación técnica práctica para proteger sus datos y construir soberanía.
+              </p>
+            </div>
+            <div class="project-meta-block">
+              <span class="meta-label">Stack y Métodos</span>
+              <p class="meta-content">
+                Estaciones de trabajo Linux de código abierto, nodos de documentación offline, mensajería cifrada y talleres prácticos de alfabetización en IA.
+              </p>
+            </div>
+            <div class="project-meta-block">
+              <span class="meta-label">Impacto humano y operativo</span>
+              <p class="meta-content">
+                Diseño de un currículo con alto poder de acción en La Paz, transformando a estudiantes en operadores autónomos equipados con sólida higiene digital y destreza técnica.
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <span class="project-category">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect></svg>
+              Infraestructura de IA local en el Edge
+            </span>
+            <h3 class="project-title">Hub de telemetría e IA autónoma en el Edge</h3>
+            <div class="project-meta-block">
+              <span class="meta-label">Arquitectura del problema</span>
+              <p class="meta-content">
+                El consumo estándar de APIs propietarias de LLM expone a riesgos de fuga de telemetría, latencia impredecible y dependencia de monopolios en la nube.
+              </p>
+            </div>
+            <div class="project-meta-block">
+              <span class="meta-label">Stack y Métodos</span>
+              <p class="meta-content">
+                Raspberry Pi 5, motor local de inferencia Ollama, túneles Zero-Trust de Cloudflare, servidores Model Context Protocol (MCP) y sondas en Python.
+              </p>
+            </div>
+            <div class="project-meta-block">
+              <span class="meta-label">Impacto humano y operativo</span>
+              <p class="meta-content">
+                Nodo cognitivo autoalojado y hermético que brinda capacidades privadas de razonamiento y herramientas de IA de forma remota y segura, sin suscripciones recurrentes.
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <span class="project-category">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+              Operaciones de Flota Empresarial
+            </span>
+            <h3 class="project-title">Observabilidad multitenant para flotas MSP</h3>
+            <div class="project-meta-block">
+              <span class="meta-label">Arquitectura del problema</span>
+              <p class="meta-content">
+                Gestión de más de 100 entornos de clientes heterogéneos con más de 3.500 endpoints afectados por fatiga de alertas y retrasos imprevistos en escalaciones N2/N3.
+              </p>
+            </div>
+            <div class="project-meta-block">
+              <span class="meta-label">Stack y Métodos</span>
+              <p class="meta-content">
+                Monitoreo centralizado RMM, scripts automatizados de diagnóstico en PowerShell, pipelines de replicación BCDR y calibración de líneas base de umbrales SNMP.
+              </p>
+            </div>
+            <div class="project-meta-block">
+              <span class="meta-label">Impacto humano y operativo</span>
+              <p class="meta-content">
+                Reducción del 40 % en MTTR, estabilización de SLAs al 99.9 %+ y redacción de runbooks deterministas que eliminaron la ambigüedad operativa en equipos distribuidos.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION [04]: THE NON-LINEAR SYNTHESIS
+         ======================================================================= -->
+    <section id="synthesis" class="section-wrapper" aria-labelledby="synthesis-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">[04 // POSTURA FUNDACIONAL]</span>
+          <h2 id="synthesis-heading">La síntesis no lineal: De la óptica documental a la arquitectura de sistemas</h2>
+        </header>
+
+        <div class="synthesis-layout">
+          <div class="synthesis-text">
+            <p class="lead">
+              Una infraestructura técnica rara vez colapsa por mera insuficiencia mecánica. Cede en la frontera crítica entre la máquina y el operador humano.
+            </p>
+            <p>
+              Antes de gestionar operaciones de redes empresariales y virtualización cloud, trabajé durante años como fotógrafo profesional de documental y reportaje. Formado en la tradición visual de Saul Leiter y Gregory Crewdson, aprendí a leer la geometría espacial, a evaluar relaciones señal/ruido, a anticipar el timing y a percibir tensiones humanas sutiles bajo alta presión.
+            </p>
+            <p>
+              Respaldada por una sólida formación académica en Tecnologías de Telecomunicaciones y Redes Informáticas (CNAM Francia), esta agudeza óptica se traduce de manera directa en disciplina arquitectónica:
+            </p>
+            <div class="synthesis-quote">
+              «Así como una fotografía fracasa cuando existe discordancia entre el encuadre, la luz y el sujeto; un sistema técnico fracasa cuando existe discordancia entre la topología de la máquina y la comprensión del operador.»
+            </div>
+            <p>
+              Aplico un filtro intransigente contra el <em>Encuadre Falsificado</em>: sin certezas infundadas, sin clichés corporativos engañosos y sin capas de abstracción innecesarias que disimulen fallas operativas.
+            </p>
+          </div>
+
+          <!-- Spec Aside Box -->
+          <div class="synthesis-spec-box">
+            <h4 class="synthesis-spec-title">La Arquitectura de Doble Capa</h4>
+            <ul class="synthesis-spec-list">
+              <li class="synthesis-spec-item">
+                <h5>1. La Capa de la Máquina (Rigor de Infraestructura)</h5>
+                <p>Enrutamiento de red desde primeros principios, automatización IaC determinista, segmentación de perímetro Zero-Trust, virtualización tolerante a fallos y pipelines de telemetría de alta fidelidad.</p>
+              </li>
+              <li class="synthesis-spec-item">
+                <h5>2. La Capa del Operador (Soberanía Humana)</h5>
+                <p>Traducción de topologías opacas a modelos mentales transparentes, reducción de la fatiga cognitiva durante incidentes críticos y flujos estructurados de alineación humano-IA.</p>
+              </li>
+              <li class="synthesis-spec-item">
+                <h5>3. El Filtro del Espacio Negativo</h5>
+                <p>Rechazo absoluto al lenguaje corporativo vacío, al bloqueo en cajas negras comerciales y a las apariencias superficiales. Ejecución pragmática y asertiva.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION [05]: METHODOLOGY — THE 5-STAGE PROTOCOL
+         ======================================================================= -->
+    <section id="methodology" class="section-wrapper" aria-labelledby="methodology-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">[05 // PROTOCOLO OPERATIVO]</span>
+          <h2 id="methodology-heading">Metodología: El protocolo de codificación y ejecución en 5 etapas</h2>
+          <p class="section-subtitle">
+            Un marco de ingeniería y aprendizaje en bucle cerrado desplegado para diagnósticos complejos, ingeniería de contexto en IA y transferencia sostenible de conocimiento.
+          </p>
+        </header>
+
+        <div class="protocol-stepper">
+          <!-- Stage 1 -->
+          <div class="protocol-step">
+            <span class="step-num">ETAPA 01</span>
+            <h3 class="step-title">Núcleo técnico preciso</h3>
+            <p class="step-desc">Establecer el mecanismo factual de causa raíz, despojado de rellenos publicitarios y supuestos superficiales.</p>
+          </div>
+
+          <!-- Stage 2 -->
+          <div class="protocol-step">
+            <span class="step-num">ETAPA 02</span>
+            <h3 class="step-title">Metáfora espacio-visual</h3>
+            <p class="step-desc">Anclar la lógica abstracta de protocolos y el flujo de datos en modelos mentales físicos y ópticos tangibles.</p>
+          </div>
+
+          <!-- Stage 3 -->
+          <div class="protocol-step">
+            <span class="step-num">ETAPA 03</span>
+            <h3 class="step-title">Mapa gráfico de arquitectura</h3>
+            <p class="step-desc">Modelar la topología del sistema mediante matrices estructurales, máquinas de estado o diagramas de flujo deterministas.</p>
+          </div>
+
+          <!-- Stage 4 -->
+          <div class="protocol-step">
+            <span class="step-num">ETAPA 04</span>
+            <h3 class="step-title">Bloqueo motor manuscrito</h3>
+            <p class="step-desc">Extraer las 3 a 5 reglas irreductibles y transcribirlas a mano en papel para activar la memoria motora.</p>
+          </div>
+
+          <!-- Stage 5 -->
+          <div class="protocol-step">
+            <span class="step-num">ETAPA 05</span>
+            <h3 class="step-title">Verificación de Feynman</h3>
+            <p class="step-desc">Explicar el concepto bajo fricción calibrada para revelar y resolver inmediatamente cualquier punto ciego latente.</p>
+          </div>
+        </div>
+
+        <!-- Live State Routing Mode Strip -->
+        <div class="state-router" aria-label="Matriz de enrutamiento dinámico de estados">
+          <div class="state-item">
+            <span class="state-badge">MODO [@PEAK]</span>
+            <span class="state-desc">Arquitectura analítica profunda, rigor sintáctico y diagnóstico de incidentes con máxima exigencia.</span>
+          </div>
+          <div class="state-item">
+            <span class="state-badge">MODO [@INGEST]</span>
+            <span class="state-desc">Mapeo de sistemas a alto nivel, andamiaje estructural de modelos y síntesis visual de topologías.</span>
+          </div>
+          <div class="state-item">
+            <span class="state-badge">MODO [@CONSOLIDATE]</span>
+            <span class="state-desc">Refuerzo a bajo esfuerzo cognitivo, verificación de conceptos previos y consolidación de memoria.</span>
+          </div>
+          <div class="state-item">
+            <span class="state-badge">MODO [@EXEC]</span>
+            <span class="state-desc">Triage en producción, despliegue acelerado de runbooks y resolución de incidentes en tiempo real.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION [06]: CONTACT & ENGAGEMENT TERMINAL
+         ======================================================================= -->
+    <section id="contact" class="section-wrapper contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">[06 // TERMINAL DE CONTRATACIÓN]</span>
+          <h2 id="contact-heading">Iniciar colaboración técnica</h2>
+          <p class="section-subtitle">
+            Consultoría técnica de alto nivel y máxima responsabilidad. Disponible para contratos independientes remotos, estabilización de infraestructura e ingeniería de contexto de IA.
+          </p>
+        </header>
+
+        <div class="contact-grid">
+          <!-- Engagement Models -->
+          <div class="engagement-models">
+            <div class="engagement-model-card">
+              <h3 class="engagement-model-title">// 01. Contratos independientes de TI y NOC</h3>
+              <p class="engagement-model-desc">
+                Gestión de incidentes críticos N2/N3, auditoría y migración de infraestructura cloud y virtualizada (Azure, VMware, Hyper-V), auditoría BCDR y modernización del monitoreo.
+              </p>
+            </div>
+
+            <div class="engagement-model-card">
+              <h3 class="engagement-model-title">// 02. Ingeniería de contexto y alineación de IA</h3>
+              <p class="engagement-model-desc">
+                Creación de integraciones personalizadas de Model Context Protocol (MCP), despliegue de nodos LLM locales privados (Ollama/RPi5), rúbricas de evaluación RLHF y grafos cognitivos.
+              </p>
+            </div>
+
+            <div class="engagement-model-card">
+              <h3 class="engagement-model-title">// 03. Alianzas cívicas y pedagógicas</h3>
+              <p class="engagement-model-desc">
+                Talleres colaborativos y diseño de infraestructura para soberanía digital, cifrado práctico y empoderamiento tecnológico en América Latina y globalmente.
+              </p>
+            </div>
+
+            <div class="engagement-model-card" style="border-left: 2px solid var(--accent-cyan);">
+              <h3 class="engagement-model-title" style="color: var(--accent-cyan);">// Parámetros telemétricos operativos</h3>
+              <p class="engagement-model-desc">
+                <strong>Base:</strong> La Paz, Bolivia (UTC-4) · Sincronía plena con jornadas laborales de Norteamérica (EST/CST/PST) y amplio solapamiento con Europa. Dominio fluido de inglés y francés nativo con español profesional.
+              </p>
+            </div>
+          </div>
+
+          <!-- Direct Communication Channels -->
+          <div class="contact-channels-card">
+            <h3 class="channels-title">Canales de ingestión directa</h3>
+            <p class="channels-subtitle">Comuníquese directamente a través de los canales verificados. Respuestas técnicas directas y oportunas.</p>
+
+            <div class="channels-list">
+              <!-- Primary Email -->
+              <div class="channel-item">
+                <div>
+                  <span class="channel-label">CORREO PRINCIPAL:</span><br>
+                  <a href="mailto:contact@tsimon.me" class="channel-value">contact@tsimon.me</a>
+                </div>
+                <button type="button" class="copy-btn" data-copy="contact@tsimon.me" aria-label="Copiar correo principal">[Copiar]</button>
+              </div>
+
+              <!-- Secondary Email -->
+              <div class="channel-item">
+                <div>
+                  <span class="channel-label">CORREO DIRECTO:</span><br>
+                  <a href="mailto:hello@tsimon.me" class="channel-value">hello@tsimon.me</a>
+                </div>
+                <button type="button" class="copy-btn" data-copy="hello@tsimon.me" aria-label="Copiar correo directo">[Copiar]</button>
+              </div>
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/tsimonfreelance/" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <div>
+                  <span class="channel-label">RED PROFESIONAL:</span><br>
+                  <span class="channel-value">linkedin.com/in/tsimonfreelance</span>
+                </div>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+
+              <!-- Encryption Status -->
+              <div class="channel-item">
+                <div>
+                  <span class="channel-label">CIFRADO PGP:</span><br>
+                  <span class="channel-value" style="color: var(--accent-cyan);">HUELLA DISPONIBLE A SOLICITUD</span>
+                </div>
+                <span class="status-indicator" style="background: var(--accent-cyan); box-shadow: 0 0 6px var(--accent-cyan);"></span>
+              </div>
+            </div>
+
+            <a href="mailto:contact@tsimon.me?subject=Consulta%20de%20consultoria%20tecnica%20-%20tsimon.me" class="btn btn-primary" style="width: 100%;">
+              <span>[ Abrir cliente de correo ]</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer role="contentinfo" class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-creds">
+          <span>&copy; 2026 THOMAS MATHIEU SIMON</span>
+          <span aria-hidden="true">·</span>
+          <span>LA PAZ, BO (UTC-4)</span>
+          <span aria-hidden="true">·</span>
+          <span style="color: var(--accent-lime);">TODOS LOS SISTEMAS NOMINALES</span>
+        </div>
+        <div>
+          <span>CONSTRUIDO SOBRE PRIMEROS PRINCIPIOS · CERO DEPENDENCIAS EXTERNAS DE EJECUCIÓN</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Element -->
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Telemetry & Interaction Scripts -->
+  <script src="script.js" defer></script>
+</body>
+</html>
