@@ -1005,11 +1005,52 @@ code {
   transition: background 200ms ease;
 }
 
+.contact-section-tag {
+  margin-bottom: var(--space-md);
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-2xl);
   align-items: start;
+}
+
+.contact-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-col-header {
+  margin-bottom: var(--space-md);
+}
+
+.contact-col-header .contact-title {
+  font-size: var(--text-2xl);
+  color: var(--text-primary);
+  margin-top: 0;
+  margin-bottom: var(--space-xs);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.02em;
+}
+
+.contact-col-header .contact-subtitle {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: var(--leading-normal);
+  margin-bottom: 0;
+}
+
+@media (min-width: 961px) {
+  .contact-col-header .contact-title {
+    min-height: 2.2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-col-header .contact-subtitle {
+    min-height: 42px;
+  }
 }
 
 .engagement-models {
@@ -1048,7 +1089,7 @@ code {
   background: var(--bg-surface);
   border: 1px solid var(--border-medium);
   border-radius: var(--radius-md);
-  padding: var(--space-xl);
+  padding: var(--space-md);
 }
 
 .channels-title {
@@ -1067,7 +1108,7 @@ code {
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
 }
 
 .channel-item {
