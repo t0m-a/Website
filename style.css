@@ -1098,6 +1098,33 @@ code {
   font-weight: 500;
 }
 
+.pgp-link {
+  color: var(--accent-cyan);
+  text-decoration: underline;
+  text-decoration-color: rgba(56, 189, 248, 0.4);
+  text-underline-offset: 3px;
+  word-break: break-word;
+  transition: all var(--transition-fast);
+  display: inline-block;
+  line-height: 1.4;
+  font-family: var(--font-mono);
+}
+
+.pgp-link:hover {
+  color: var(--accent-lime);
+  text-decoration-color: var(--accent-lime);
+}
+
+[data-theme="light"] .pgp-link {
+  color: #0284c7;
+  text-decoration-color: rgba(2, 132, 199, 0.4);
+}
+
+[data-theme="light"] .pgp-link:hover {
+  color: #15803d;
+  text-decoration-color: #15803d;
+}
+
 .copy-btn {
   background: none;
   border: none;
